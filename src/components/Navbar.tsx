@@ -2,7 +2,7 @@ import { FC } from "react"
 import Link from "next/link"
 import { buttonVariants } from "./ui/button"
 import { NavigationMenuDemo } from "@/components/NavigationMenuDemo"
-import { UserProfile } from "@clerk/nextjs"
+import { UserButton, UserProfile } from "@clerk/nextjs"
 
 const Navbar = () => {
     return (
@@ -17,8 +17,7 @@ const Navbar = () => {
                 </div>
 
                 <div className="hidden md:flex gap-4">
-                    {/* <UserProfile /> */}
-                    <p>login</p>
+                    <UserButton />
                 </div>
             </div>
         </div>
