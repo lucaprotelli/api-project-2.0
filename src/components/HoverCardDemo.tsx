@@ -14,7 +14,7 @@ export function HoverCardDemo() {
         <HoverCard>
             <HoverCardTrigger asChild>
                 <Button
-                    className="inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-600"
+                    className="inline-flex items-center justify-center rounded-full bg-indigo-600/10 px-3 py-1 text-sm font-semibold leading-6 text-indigo-600 ring-1 ring-inset ring-indigo-600/10 hover:text-indigo-800 hover:ring-indigo-600/30 transition-all md:py-2 "
                     variant="link"
                 >
                     New open source UI library{" "}
@@ -24,7 +24,7 @@ export function HoverCardDemo() {
                     />
                 </Button>
             </HoverCardTrigger>
-            <HoverCardContent className="w-80" align="start">
+            <HoverCardContent className="w-80" align="center">
                 <div className="flex justify-between space-x-4">
                     <Avatar>
                         <AvatarImage

@@ -16,7 +16,7 @@ const Navbar = () => {
                     <NavigationMenuDemo />
                 </div>
 
-                <div className="hidden md:flex gap-4">
+                <div className="flex">
                     <UserButton />
                 </div>
             </div>

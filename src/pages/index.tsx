@@ -5,6 +5,7 @@ import { HoverCardDemo } from "@/components/HoverCardDemo"
 import Paragraph from "@/components/ui/Paragraph"
 import LargeHeader from "@/components/ui/LargeHeadings"
 import Navbar from "@/components/Navbar"
+import { CalendarDateRangePicker } from "@/components/CalendarDateRangePicker"
 
 export const metadata: Metadata = {
     title: "Api Project |  Home",
@@ -41,13 +42,9 @@ export default function Home() {
             <div className="flex justify-center content-center">
                 <div className="mx-auto text-center px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 lg:py-40">
                     <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl lg:flex-shrink-0 lg:pt-8">
+                        <CalendarDateRangePicker className="" />
                         <div className="mt-24 sm:mt-32 lg:mt-16 text-center">
-                            <a href="#" className="inline-flex space-x-6">
-                                <span className="rounded-full bg-indigo-600/10 px-3 py-1 text-sm font-semibold leading-6 text-indigo-600 ring-1 ring-inset ring-indigo-600/10 hover:text-indigo-800 hover:ring-indigo-600/30 transition-all md:py-2 ">
-                                    What&#39;s new
-                                </span>
-                                <HoverCardDemo />
-                            </a>
+                            <HoverCardDemo />
                         </div>
                         {/* <h1 className="mt-10 text-4xl text-center font-bold tracking-tight text-gray-900 sm:text-6xl">
                             Deploy to the cloud with confidence
